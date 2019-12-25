@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title><%= title %></title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            #image {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- TODO: loading animation -->
+        <img id="image" />
+        <script>
+            const initialUrl = "<%= url %>";
+            <%- include('../js/client/image.js') %>
+        </script>
+    </body>
+</html>

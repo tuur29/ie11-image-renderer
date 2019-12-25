@@ -1,0 +1,15 @@
+{
+  "name": "ie11-image-renderer",
+  "version": "1.0.0",
+  "main": "src/js/server/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "puppeteer": "^2.0.0"
+  },
+  "scripts": {
+    "start": "node src/js/server/index.js"
+  }
+}
