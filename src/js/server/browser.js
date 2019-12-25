@@ -2,7 +2,7 @@ const puppeteer = require("puppeteer");
 
 // TODO: improve performance, only one browser instance?
 module.exports = async (url, width, height) => {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
   console.log("%c Log: %c width ", ...Array(2).fill("color:aqua"), width);
   page.setViewport({ width, height });
